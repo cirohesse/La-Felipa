@@ -16,7 +16,7 @@ function App() {
       element.scrollIntoView({ behavior: 'smooth' })
     }
   }
-console.log('force deploy')
+
   return (
     <div className="App">
       <Header onNavigate={scrollToSection} />
