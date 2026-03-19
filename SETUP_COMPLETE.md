@@ -2,12 +2,12 @@
 
 ## ✅ Lo que se ha creado
 
-Tu proyecto React completo está listo en: `C:\Users\Ciro\development\la-felipa-web`
+Tu proyecto React completo está listo en: `C:\Users\Ciro\development\La-Felipa`
 
 ### 📁 Estructura del Proyecto
 
 ```
-la-felipa-web/
+La-Felipa/
 ├── 📄 index.html              # Archivo HTML principal
 ├── 📄 package.json            # Dependencias del proyecto
 ├── 📄 vite.config.js          # Configuración de Vite
@@ -49,7 +49,7 @@ la-felipa-web/
 
 ### Opción 1: Usar el script helper
 ```bash
-cd C:\Users\Ciro\development\la-felipa-web
+cd C:\Users\Ciro\development\La-Felipa
 start.bat
 ```
 
@@ -57,7 +57,7 @@ start.bat
 
 **Instalación inicial:**
 ```bash
-cd C:\Users\Ciro\development\la-felipa-web
+cd C:\Users\Ciro\development\La-Felipa
 npm install
 ```
 

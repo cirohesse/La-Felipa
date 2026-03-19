@@ -42,7 +42,7 @@ export default function Header({ onNavigate }) {
         </nav>
         </div>
                 <div className="logo">
-          <img src="/la-felipa-web/assets/logo-la-felipa.png" alt="La Felipa Logo" />
+          <img src="/La-Felipa/assets/logo-la-felipa.png" alt="La Felipa Logo" />
         </div>
 
       </div>

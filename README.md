@@ -11,7 +11,7 @@ Sitio web profesional para promocionar cabañas en La Cumbrecita, Córdoba Argen
 
 1. Clona o abre el proyecto:
 ```bash
-cd la-felipa-web
+cd La-Felipa
 ```
 
 2. Instala las dependencias:
@@ -32,7 +32,7 @@ El sitio estará disponible en `http://localhost:5173`
 ## Estructura del Proyecto
 
 ```
-la-felipa-web/
+La-Felipa/
 ├── src/
 │   ├── components/        # Componentes React
 │   │   ├── Header.jsx
@@ -67,12 +67,12 @@ Esto generará la carpeta `dist/` con los archivos optimizados.
 Reemplaza `yourusername` con tu usuario de GitHub:
 
 ```json
-"homepage": "https://yourusername.github.io/la-felipa-web/"
+"homepage": "https://yourusername.github.io/La-Felipa/"
 ```
 
 ### Paso 2: Crear repositorio en GitHub
 
-1. Ve a [github.com](https://github.com) y crea un nuevo repositorio llamado `la-felipa-web`
+1. Ve a [github.com](https://github.com) y crea un nuevo repositorio llamado `La-Felipa`
 2. No inicialices con README, .gitignore o license
 
 ### Paso 3: Inicializar git y hacer push
@@ -82,7 +82,7 @@ git init
 git add .
 git commit -m "Initial commit: La Felipa website"
 git branch -M main
-git remote add origin https://github.com/yourusername/la-felipa-web.git
+git remote add origin https://github.com/yourusername/La-Felipa.git
 git push -u origin main
 ```
 
@@ -101,7 +101,7 @@ Esto construirá el proyecto y lo desplegará automáticamente a GitHub Pages.
 3. En "Source", selecciona la rama `gh-pages`
 4. Haz click en Save
 
-Tu sitio estará disponible en: `https://yourusername.github.io/la-felipa-web/`
+Tu sitio estará disponible en: `https://yourusername.github.io/La-Felipa/`
 
 ## Personalización
 
@@ -110,7 +110,7 @@ Tu sitio estará disponible en: `https://yourusername.github.io/la-felipa-web/`
 Antes de hacer deploy, actualiza el archivo `package.json`:
 
 ```json
-"homepage": "https://TU_USUARIO_AQUI.github.io/la-felipa-web/"
+"homepage": "https://TU_USUARIO_AQUI.github.io/La-Felipa/"
 ```
 
 ### Cambiar contenido

@@ -4,7 +4,7 @@
 
 ```bash
 # 1. Ve a la carpeta del proyecto
-cd C:\Users\Ciro\development\la-felipa-web
+cd C:\Users\Ciro\development\La-Felipa
 
 # 2. Instala las dependencias
 npm install
@@ -74,7 +74,7 @@ npm run deploy   # Deploy a GitHub Pages
 1. Coloca la imagen en: `public/assets/`
 2. En el componente, úsala así:
    ```jsx
-   <img src="/la-felipa-web/assets/nombre-de-imagen.jpg" alt="Descripción" />
+   <img src="/La-Felipa/assets/nombre-de-imagen.jpg" alt="Descripción" />
    ```
 
 ## Verificar Cambios
@@ -103,7 +103,7 @@ git push
 npm run deploy
 ```
 
-Tu sitio estará en: `https://TU_USUARIO.github.io/la-felipa-web/`
+Tu sitio estará en: `https://TU_USUARIO.github.io/La-Felipa/`
 
 ## Preguntas Frecuentes
 

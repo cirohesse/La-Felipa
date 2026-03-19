@@ -48,7 +48,7 @@ git branch -M main
 2. Haz click en el ícono `+` en la esquina superior derecha
 3. Selecciona "New repository"
 4. Rellena los datos:
-   - **Repository name:** `la-felipa-web`
+   - **Repository name:** `La-Felipa`
    - **Description:** Sitio web de promoción de cabañas en La Cumbrecita
    - **Public:** Dejar marcado (necesario para GitHub Pages gratis)
    - **NO marques** "Add a README file", ".gitignore", o "Choose a license"
@@ -59,7 +59,7 @@ git branch -M main
 Después de crear el repositorio, GitHub te mostrará un comando para conectar. Ejecútalo (reemplaza `yourusername` con tu usuario):
 
 ```bash
-git remote add origin https://github.com/yourusername/la-felipa-web.git
+git remote add origin https://github.com/yourusername/La-Felipa.git
 git push -u origin main
 ```
 
@@ -97,7 +97,7 @@ Este proceso toma 1-2 minutos.
 Dentro de 2-3 minutos, tu sitio estará disponible en:
 
 ```
-https://yourusername.github.io/la-felipa-web/
+https://yourusername.github.io/La-Felipa/
 ```
 
 Reemplaza `yourusername` con tu usuario de GitHub.

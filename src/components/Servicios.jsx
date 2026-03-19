@@ -104,7 +104,7 @@ export default function Servicios() {
             <div key={servicio.id} className="servicio-card">
               <div className="servicio-icon">
                 <img 
-                  src={`/la-felipa-web/assets/${servicio.icono}`}
+                  src={`/La-Felipa/assets/${servicio.icono}`}
                   alt={servicio.titulo}
                 />
               </div>
