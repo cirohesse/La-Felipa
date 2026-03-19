@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="hero">
       <img 
-        src="/la-felipa-web/assets/hero.jpg" 
+        src="/La-Felipa/assets/hero.jpg" 
         alt="La Felipa - Cabañas en La Cumbrecita"
         className="hero-image"
       />

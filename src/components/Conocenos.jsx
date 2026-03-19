@@ -27,7 +27,7 @@ export default function Conocenos() {
 
         <div className="conocenos-image">
           <img 
-            src="/la-felipa-web/assets/tranquera-la-felipa.jpg" 
+            src="/La-Felipa/assets/tranquera-la-felipa.jpg" 
             alt="Tranquera La Felipa"
           />
         </div>
