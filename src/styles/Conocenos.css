@@ -1,0 +1,66 @@
+.conocenos {
+  background-color: var(--light-bg);
+  padding: 5rem 2rem;
+}
+
+.conocenos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.conocenos-text h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.conocenos-text .intro {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.conocenos-text p {
+  color: var(--dark-text);
+  margin-bottom: 1.5rem;
+  text-align: justify;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.conocenos-image {
+  position: relative;
+  border-radius: 16px;
+  padding: 2rem 0rem 0rem 2rem;
+  background-color: var(--accent-color);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.conocenos-image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px 0px 16px 16px;
+}
+
+@media (max-width: 768px) {
+  .conocenos {
+    padding: 3rem 1.5rem;
+  }
+
+  .conocenos-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .conocenos-text p {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+}

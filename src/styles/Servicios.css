@@ -1,0 +1,126 @@
+.servicios {
+  background-color: var(--white);
+  padding: 5rem 2rem;
+}
+
+.servicios-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servicios-container h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 3rem;
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.servicio-card {
+  background-color: var(--light-bg);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border-bottom: 4px solid transparent;
+  cursor: pointer;
+}
+
+.servicio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-bottom-color: var(--secondary-color);
+}
+
+.servicio-icon {
+  margin-bottom: 1.5rem;
+}
+
+.servicio-icon img {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+  color: var(--secondary-color);
+}
+
+.servicio-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.servicio-card p {
+  font-size: 0.85rem;
+  color: var(--dark-text);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.servicios-info {
+  background-color: var(--light-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 5px solid var(--primary-color);
+}
+
+.servicios-info p {
+  color: var(--dark-text);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.servicios-info p:last-child {
+  margin-bottom: 0;
+}
+
+.servicios-info strong {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .servicios {
+    padding: 3rem 1.5rem;
+  }
+
+  .servicios-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .servicio-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .servicio-card h3 {
+    font-size: 0.9rem;
+  }
+
+  .servicio-card p {
+    font-size: 0.8rem;
+  }
+
+  .servicios-info {
+    padding: 1.5rem;
+  }
+
+  .servicios-info p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .servicios-grid {
+    grid-template-columns: 1fr;
+  }
+}
