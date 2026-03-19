@@ -25,7 +25,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-social">
-          <h3>Síguenos</h3>
+          <h3>Seguinos</h3>
           <div className="social-icons">
             <a 
               href="https://instagram.com/cabanaslafelipa" 
@@ -44,7 +44,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>Copyright © 2024 La Felipa | Powered by La Felipa</p>
+        <p>Copyright © 2026 La Felipa | Powered by La Felipa</p>
       </div>
     </footer>
   )
