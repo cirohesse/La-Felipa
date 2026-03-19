@@ -17,7 +17,7 @@ const servicios = [
     id: 'cocina',
     titulo: 'COCINA EQUIPADA',
     descripcion: 'Con añafe, microondas, heladera, pava eléctrica y cafetera',
-    icono: 'logo-cubiertos.svg'
+    icono: 'logo-guantecocina.svg'
   },
   {
     id: 'vajilla',
@@ -83,13 +83,13 @@ const servicios = [
     id: 'ropa',
     titulo: 'ROPA BLANCA',
     descripcion: 'Recambio de sábanas, toallas y toallones',
-    icono: 'logo-guantecocina.svg'
+    icono: 'logo-hoja.svg'
   },
   {
     id: 'entorno',
     titulo: 'ENTORNO',
     descripcion: 'Natural',
-    icono: 'logo-hoja.svg'
+    icono: 'logo-arbol.svg'
   }
 ]
 
