@@ -4,91 +4,91 @@ const servicios = [
   {
     id: 'desayuno',
     titulo: 'DESAYUNO',
-    descripcion: 'Seco incluido',
+    descripcion: 'seco incluido',
     icono: 'logo-cafe.svg'
   },
   {
     id: 'wifi',
     titulo: 'WIFI',
-    descripcion: 'En todo el complejo',
+    descripcion: 'en todo el complejo',
     icono: 'logo-wifi.svg'
   },
   {
     id: 'cocina',
     titulo: 'COCINA EQUIPADA',
-    descripcion: 'Con añafe, microondas, heladera, pava eléctrica y cafetera',
+    descripcion: 'con anafe, microondas, heladera, pava eléctrica y cafetera',
     icono: 'logo-guantecocina.svg'
   },
   {
     id: 'vajilla',
     titulo: 'VAJILLA COMPLETA',
-    descripcion: 'Para dos personas',
+    descripcion: 'para dos personas',
     icono: 'logo-cubiertos.svg'
   },
   {
     id: 'tv',
     titulo: 'TV SMART',
-    descripcion: 'Con Direct TV',
+    descripcion: 'con Direct TV',
     icono: 'logo-tv.svg'
   },
   {
     id: 'bano',
     titulo: 'BAÑO',
-    descripcion: 'Completo con ducha',
+    descripcion: 'completo con ducha',
     icono: 'logo-ducha.svg'
   },
   {
     id: 'jacuzzi',
     titulo: 'JACUZZI',
-    descripcion: 'En la habitación',
+    descripcion: 'en la habitación',
     icono: 'logo-jacuzzi.svg'
   },
   {
     id: 'cama',
     titulo: 'CAMA MATRIMONIAL',
-    descripcion: 'En todas las unidades',
+    descripcion: 'en todas las unidades',
     icono: 'logo-cama.svg'
   },
   {
     id: 'terraza',
     titulo: 'TERRAZA INDIVIDUAL',
-    descripcion: 'En cada cabaña',
+    descripcion: 'en cada cabaña',
     icono: 'logo-terrazaindividual.svg'
   },
   {
     id: 'mosquitero',
     titulo: 'MOSQUITERO',
-    descripcion: 'En todas las ventanas',
+    descripcion: 'en todas las ventanas',
     icono: 'logo-mosquitero.svg'
   },
   {
     id: 'limpieza',
     titulo: 'SERVICIO DE LIMPIEZA',
-    descripcion: 'Incluido',
+    descripcion: 'incluido',
     icono: 'logo-limpieza.svg'
   },
   {
     id: 'estacionamiento',
     titulo: 'ESTACIONAMIENTO',
-    descripcion: 'Dentro del predio',
+    descripcion: 'dentro del predio',
     icono: 'logo-auto.svg'
   },
   {
     id: 'calefaccion',
     titulo: 'CALEFACCIÓN CENTRAL',
-    descripcion: 'Por radiadores',
+    descripcion: 'por radiadores',
     icono: 'logo-temperatura.svg'
   },
   {
     id: 'ropa',
     titulo: 'ROPA BLANCA',
-    descripcion: 'Recambio de sábanas, toallas y toallones',
+    descripcion: 'recambio de sábanas, toallas y toallones',
     icono: 'logo-hoja.svg'
   },
   {
     id: 'entorno',
     titulo: 'ENTORNO',
-    descripcion: 'Natural',
+    descripcion: 'natural',
     icono: 'logo-arbol.svg'
   }
 ]
