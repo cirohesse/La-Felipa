@@ -1,0 +1,7 @@
+node_modules
+dist
+public/assets
+**/*.min.js
+**/*.woff
+**/*.woff2
+**/*.ttf

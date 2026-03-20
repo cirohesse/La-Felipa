@@ -1,0 +1,38 @@
+.menuToggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  width: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.menuToggle span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--dark-text);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(11px);
+}
+
+.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-11px);
+}
+
+@media (max-width: 768px) {
+  .menuToggle {
+    display: flex;
+  }
+}

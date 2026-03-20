@@ -1,10 +1,10 @@
 .footer {
   background-color: var(--light-bg);
   padding: 2rem 2rem 1.5rem;
-  border-top: 1px solid #E8E0D0;
+  border-top: 1px solid #e8e0d0;
 }
 
-.footer-container {
+.footerContainer {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -14,25 +14,25 @@
   margin-bottom: 2rem;
 }
 
-.footer-logo {
+.footerLogo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.footer-logo img {
+.footerLogo img {
   height: 120px;
   width: auto;
   opacity: 0.9;
 }
 
-.footer-contact,
-.footer-social {
+.footerContact,
+.footerSocial {
   text-align: center;
 }
 
-.footer-contact h3,
-.footer-social h3 {
+.footerContact h3,
+.footerSocial h3 {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
   color: var(--primary-color);
@@ -40,29 +40,29 @@
   letter-spacing: 1px;
 }
 
-.footer-contact p {
+.footerContact p {
   margin-bottom: 1rem;
   color: var(--dark-text);
   font-size: 0.95rem;
 }
 
-.footer-contact a {
+.footerContact a {
   color: var(--secondary-color);
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
-.footer-contact a:hover {
+.footerContact a:hover {
   color: var(--primary-color);
 }
 
-.social-icons {
+.socialIcons {
   display: flex;
   gap: 2rem;
   justify-content: center;
 }
 
-.social-icons a {
+.socialIcons a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -75,13 +75,13 @@
   padding: 0;
 }
 
-.social-icons a:hover {
+.socialIcons a:hover {
   background-color: var(--primary-color);
   color: var(--white);
   transform: scale(1.1);
 }
 
-.social-icons svg {
+.socialIcons svg {
   width: 24px;
   height: 24px;
   fill: currentColor;
@@ -89,8 +89,8 @@
   stroke-width: 0;
 }
 
-.footer-bottom {
-  border-top: 1px solid #E8E0D0;
+.footerBottom {
+  border-top: 1px solid #e8e0d0;
   padding-top: 1rem;
   text-align: center;
   color: var(--dark-text);
@@ -102,25 +102,25 @@
     padding: 3rem 1.5rem 1.5rem;
   }
 
-  .footer-container {
+  .footerContainer {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
 
-  .footer-logo img {
+  .footerLogo img {
     height: 100px;
   }
 
-  .social-icons {
+  .socialIcons {
     gap: 1.5rem;
   }
 
-  .social-icons a {
+  .socialIcons a {
     width: 45px;
     height: 45px;
   }
 
-  .social-icons svg {
+  .socialIcons svg {
     width: 20px;
     height: 20px;
   }
