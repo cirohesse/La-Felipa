@@ -3,25 +3,25 @@
   padding: 5rem 2rem;
 }
 
-.servicios-container {
+.serviciosContainer {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.servicios-container h2 {
+.serviciosContainer h2 {
   text-align: center;
   color: var(--primary-color);
   margin-bottom: 3rem;
 }
 
-.servicios-grid {
+.serviciosGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   margin-bottom: 3rem;
 }
 
-.servicio-card {
+.servicioCard {
   background-color: var(--light-bg);
   padding: 2rem 1.5rem;
   text-align: center;
@@ -31,24 +31,24 @@
   cursor: pointer;
 }
 
-.servicio-card:hover {
+.servicioCard:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   border-bottom-color: var(--accent-color);
 }
 
-.servicio-icon {
+.servicioIcon {
   margin-bottom: 1.5rem;
 }
 
-.servicio-icon img {
+.servicioIcon img {
   height: 60px;
   width: 60px;
   object-fit: contain;
   color: var(--secondary-color);
 }
 
-.servicio-card h3 {
+.servicioCard h3 {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
   color: var(--primary-color);
@@ -57,21 +57,21 @@
   font-weight: 700;
 }
 
-.servicio-card p {
+.servicioCard p {
   font-size: 0.85rem;
   color: var(--dark-text);
   margin: 0;
   line-height: 1.5;
 }
 
-.servicios-info {
+.serviciosInfo {
   background-color: var(--light-bg);
   padding: 2rem;
   border-radius: 8px;
   border-left: 5px solid var(--primary-color);
 }
 
-.servicios-info p {
+.serviciosInfo p {
   color: var(--dark-text);
   margin-bottom: 1.5rem;
   text-align: center;
@@ -79,11 +79,11 @@
   line-height: 1.8;
 }
 
-.servicios-info p:last-child {
+.serviciosInfo p:last-child {
   margin-bottom: 0;
 }
 
-.servicios-info strong {
+.serviciosInfo strong {
   color: var(--primary-color);
   font-weight: 700;
 }
@@ -93,34 +93,34 @@
     padding: 3rem 1.5rem;
   }
 
-  .servicios-grid {
+  .serviciosGrid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
 
-  .servicio-card {
+  .servicioCard {
     padding: 1.5rem 1rem;
   }
 
-  .servicio-card h3 {
+  .servicioCard h3 {
     font-size: 0.9rem;
   }
 
-  .servicio-card p {
+  .servicioCard p {
     font-size: 0.8rem;
   }
 
-  .servicios-info {
+  .serviciosInfo {
     padding: 1.5rem;
   }
 
-  .servicios-info p {
+  .serviciosInfo p {
     font-size: 0.85rem;
   }
 }
 
 @media (max-width: 480px) {
-  .servicios-grid {
+  .serviciosGrid {
     grid-template-columns: 1fr;
   }
 }

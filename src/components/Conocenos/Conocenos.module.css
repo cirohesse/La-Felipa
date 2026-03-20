@@ -3,7 +3,7 @@
   padding: 5rem 2rem;
 }
 
-.conocenos-container {
+.conocenosContainer {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -12,19 +12,19 @@
   align-items: center;
 }
 
-.conocenos-text h2 {
+.conocenosText h2 {
   color: var(--primary-color);
   margin-bottom: 1rem;
 }
 
-.conocenos-text .intro {
+.conocenosText .intro {
   font-size: 1.2rem;
   color: var(--primary-color);
   font-style: italic;
   margin-bottom: 1.5rem;
 }
 
-.conocenos-text p {
+.conocenosText p {
   color: var(--dark-text);
   margin-bottom: 1.5rem;
   text-align: justify;
@@ -32,7 +32,7 @@
   line-height: 1.8;
 }
 
-.conocenos-image {
+.conocenosImage {
   position: relative;
   border-radius: 16px;
   padding: 2rem 0rem 0rem 2rem;
@@ -41,7 +41,7 @@
   overflow: hidden;
 }
 
-.conocenos-image img {
+.conocenosImage img {
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -54,12 +54,12 @@
     padding: 3rem 1.5rem;
   }
 
-  .conocenos-container {
+  .conocenosContainer {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
 
-  .conocenos-text p {
+  .conocenosText p {
     font-size: 0.9rem;
     text-align: left;
   }
