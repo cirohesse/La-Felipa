@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="footer-container">
         <div className="footer-logo">
           <img 
-            src="/la-felipa-web/assets/logo-lf-simplificado.png" 
+            src="/assets/logo-lf-simplificado.png" 
             alt="La Felipa Logo"
           />
         </div>

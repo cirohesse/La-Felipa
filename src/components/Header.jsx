@@ -41,9 +41,9 @@ export default function Header({ onNavigate }) {
           <button onClick={() => handleNavClick('contacto')}>CONTACTO</button>
         </nav>
         </div>
-                <div className="logo">
-          <img src="/La-Felipa/assets/logo-la-felipa.png" alt="La Felipa Logo" />
-        </div>
+                <button className="logo" onClick={() => handleNavClick('home')} aria-label="Home">
+          <img src="/assets/logo-la-felipa.png" alt="La Felipa Logo" />
+        </button>
 
       </div>
     </header>
