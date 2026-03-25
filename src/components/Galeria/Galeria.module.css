@@ -1,5 +1,5 @@
 .galeria {
-  padding: 4rem 0;
+  padding: 1rem 0 4rem;
 }
 
 .galeriaContainer {
@@ -10,6 +10,8 @@
 
 .galeria h2 {
   text-align: center;
+  color: var(--primary-color);
+  font-family: inherit;
   margin-bottom: 0.75rem;
 }
 
@@ -117,7 +119,7 @@
 
 @media (max-width: 768px) {
   .galeria {
-    padding: 3rem 0;
+    padding: 0.75rem 0 3rem;
   }
 
   .galeriaContainer {

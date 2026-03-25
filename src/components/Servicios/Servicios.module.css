@@ -1,6 +1,6 @@
 .servicios {
   background-color: var(--white);
-  padding: 5rem 2rem;
+  padding: 5rem 2rem 2rem;
 }
 
 .serviciosContainer {
@@ -90,7 +90,7 @@
 
 @media (max-width: 768px) {
   .servicios {
-    padding: 3rem 1.5rem;
+    padding: 3rem 1.5rem 1.25rem;
   }
 
   .serviciosGrid {

@@ -22,7 +22,15 @@ section:not(#home) {
   padding-top: 4rem;
 }
 
+section#galeria {
+  padding-top: 1.5rem;
+}
+
 @media (max-width: 768px) {
+  section#galeria {
+    padding-top: 1rem;
+  }
+
   main {
     padding-top: 0;
   }

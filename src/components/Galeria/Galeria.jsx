@@ -2,15 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import classes from './Galeria.module.css';
 
 const imageNames = [
-  'IMG_4459.JPG',
-  'IMG_4467.JPG',
-  'IMG_4508.JPG',
-  'IMG_4510.JPG',
-  'IMG_4533.JPG',
-  'IMG_4554.JPG',
   'IMG_4557.JPG',
   'IMG_4590.JPG',
-  'IMG_4616.JPG',
   'IMG_4639.JPG',
   'IMG_4661.JPG',
   'IMG_4711.JPG',
@@ -18,10 +11,8 @@ const imageNames = [
   'IMG_4812.JPG',
   'IMG_4816.JPG',
   'IMG_4821.JPG',
-  'IMG_4829.JPG',
   'IMG_4834.JPG',
   'IMG_4848.JPG',
-  'IMG_4852.JPG',
   'IMG_4863.JPG',
   'IMG_4883.JPG',
   'IMG_4893.JPG',
@@ -36,6 +27,10 @@ const imageNames = [
   'IMG_5040.JPG',
   'IMG_5042.JPG',
   'IMG_5048.JPG',
+  'IMG_4459.JPG',
+  'IMG_4467.JPG',
+  'IMG_4508.JPG',
+  'IMG_4533.JPG',
 ];
 
 const galleryImages = imageNames.map((image) => ({
