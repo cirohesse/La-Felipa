@@ -55,6 +55,9 @@ export const Header = ({ onNavigate }) => {
             <button className={classes.navButton} onClick={() => handleNavClick('servicios')}>
               SERVICIOS
             </button>
+            <button className={classes.navButton} onClick={() => handleNavClick('galeria')}>
+              GALERÍA
+            </button>
             <button className={classes.navButton} onClick={() => handleNavClick('contacto')}>
               CONTACTO
             </button>

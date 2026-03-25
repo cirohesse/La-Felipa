@@ -3,6 +3,7 @@ import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Conocenos } from './components/Conocenos';
 import { Servicios } from './components/Servicios';
+import { Galeria } from './components/Galeria';
 import { Footer } from './components/Footer';
 import './styles/App.css';
 
@@ -29,6 +30,9 @@ function App() {
         </section>
         <section id="servicios">
           <Servicios />
+        </section>
+        <section id="galeria">
+          <Galeria />
         </section>
       </main>
       <Footer />
