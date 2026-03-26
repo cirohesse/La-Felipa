@@ -19,7 +19,7 @@ section#home {
 }
 
 section:not(#home) {
-  padding-top: 2rem;
+  padding-top: 0rem;
 }
 
 section#servicios {

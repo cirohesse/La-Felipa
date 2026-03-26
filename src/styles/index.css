@@ -7,12 +7,12 @@
 }
 
 :root {
-  --primary-color: #8B6F47;
-  --secondary-color: #4A9BA7;
-  --accent-color: #D4A574;
-  --light-bg: #F6E4D1;
-  --dark-text: #2C2C2C;
-  --white: #FFFFFF;
+  --primary-color: #8b6f47;
+  --secondary-color: #4a9ba7;
+  --accent-color: #d4a574;
+  --light-bg: #f6e4d1;
+  --dark-text: #2c2c2c;
+  --white: #ffffff;
 }
 
 @font-face {
@@ -34,7 +34,12 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
   color: var(--dark-text);
 }
@@ -70,7 +75,7 @@ button {
 }
 
 section {
-  padding: 4rem 2rem;
+  padding: 0rem 0rem 5rem 0rem;
 }
 
 .container {
