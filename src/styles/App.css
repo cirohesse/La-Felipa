@@ -19,16 +19,30 @@ section#home {
 }
 
 section:not(#home) {
-  padding-top: 4rem;
+  padding-top: 2rem;
+}
+
+section#servicios {
+  scroll-margin-top: 9.5rem;
 }
 
 section#galeria {
   padding-top: 1.5rem;
+  scroll-margin-top: 8.5rem;
 }
 
 @media (max-width: 768px) {
+  section#servicios {
+    scroll-margin-top: 6.5rem;
+  }
+
   section#galeria {
     padding-top: 1rem;
+    scroll-margin-top: 5.5rem;
+  }
+
+  section:not(#home) {
+    padding-top: 1.25rem;
   }
 
   main {

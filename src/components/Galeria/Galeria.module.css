@@ -1,11 +1,10 @@
 .galeria {
-  padding: 1rem 0 4rem;
+  padding: 0.5rem 0 3rem;
 }
 
 .galeriaContainer {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
 }
 
 .galeria h2 {
@@ -61,17 +60,24 @@
   border-radius: 50%;
   border: none;
   background: linear-gradient(145deg, #c49765 0%, #8b6f47 100%);
-  color: #fdf8f2;
+  color: #ffffff;
   font-size: 1.7rem;
   font-weight: 700;
   box-shadow: 0 8px 20px rgba(90, 58, 30, 0.35);
   cursor: pointer;
   transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navButton:hover {
-  background: linear-gradient(145deg, #d4a574 0%, #99794f 100%);
+  background: linear-gradient(145deg, #cc8c48 0%, #b37d38 100%);
   transform: scale(1.06);
+}
+
+.navButton img {
+  filter: brightness(0) invert(1);
 }
 
 .dots {
@@ -100,6 +106,98 @@
   background: #8b6f47;
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.modalContent {
+  position: relative;
+  width: 100%;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalImage {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.closeButton {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1001;
+  transition: transform 0.2s ease;
+}
+
+.closeButton:hover {
+  transform: scale(1.2);
+}
+
+.modalNavButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(196, 151, 101, 0.8);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+}
+
+.modalNavButton:hover {
+  background: rgba(196, 151, 101, 1);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.modalNavButton img {
+  filter: brightness(0) invert(1);
+}
+
+.modalPrevButton {
+  left: -60px;
+}
+
+.modalNextButton {
+  right: -60px;
+}
+
+.modalCounter {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
 @media (max-width: 900px) {
   .carousel {
     grid-template-columns: 46px 1fr 46px;
@@ -119,11 +217,7 @@
 
 @media (max-width: 768px) {
   .galeria {
-    padding: 0.75rem 0 3rem;
-  }
-
-  .galeriaContainer {
-    padding: 0 1rem;
+    padding: 0.25rem 0 2.25rem;
   }
 
   .carousel {
@@ -137,5 +231,39 @@
 
   .slide {
     aspect-ratio: 1 / 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal {
+    padding: 2rem 1rem;
+  }
+
+  .closeButton {
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+  }
+
+  .modalNavButton {
+    background: none;
+  }
+
+  .modalNavButton:hover {
+    background: none;
+    transform: translateY(-50%) scale(1.15);
+  }
+
+  .modalPrevButton {
+    left: 10px;
+  }
+
+  .modalNextButton {
+    right: 10px;
+  }
+
+  .modalCounter {
+    bottom: 10px;
+    font-size: 0.85rem;
   }
 }

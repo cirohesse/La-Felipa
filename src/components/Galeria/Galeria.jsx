@@ -6,7 +6,6 @@ const imageNames = [
   'IMG_4590.JPG',
   'IMG_4639.JPG',
   'IMG_4661.JPG',
-  'IMG_4711.JPG',
   'IMG_4786.JPG',
   'IMG_4812.JPG',
   'IMG_4816.JPG',
@@ -40,6 +39,8 @@ const galleryImages = imageNames.map((image) => ({
 
 export const Galeria = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(null);
   const touchStartX = useRef(null);
   const touchEndX = useRef(null);
 
@@ -52,6 +53,23 @@ export const Galeria = () => {
     return () => clearTimeout(timeout);
   }, [currentIndex]);
 
+  useEffect(() => {
+    if (!isModalOpen) return;
+
+    const handleKeyDown = (e) => {
+      if (e.key === 'ArrowLeft') {
+        goToModalPrevious();
+      } else if (e.key === 'ArrowRight') {
+        goToModalNext();
+      } else if (e.key === 'Escape') {
+        closeModal();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isModalOpen, selectedImageIndex]);
+
   const goToPrevious = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + galleryImages.length) % galleryImages.length);
   };
@@ -62,6 +80,26 @@ export const Galeria = () => {
 
   const goToSlide = (index) => {
     setCurrentIndex(index);
+  };
+
+  const openModal = (index) => {
+    setSelectedImageIndex(index);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedImageIndex(null);
+  };
+
+  const goToModalPrevious = () => {
+    setSelectedImageIndex(
+      (prevIndex) => (prevIndex - 1 + galleryImages.length) % galleryImages.length
+    );
+  };
+
+  const goToModalNext = () => {
+    setSelectedImageIndex((prevIndex) => (prevIndex + 1) % galleryImages.length);
   };
 
   const handleTouchStart = (event) => {
@@ -104,7 +142,7 @@ export const Galeria = () => {
             aria-label="Imagen anterior"
             onClick={goToPrevious}
           >
-            {'<'}
+            <img src="/La-Felipa/assets/flecha-izquierda.svg" alt="Anterior" />
           </button>
 
           <div
@@ -117,9 +155,15 @@ export const Galeria = () => {
               className={classes.slidesTrack}
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
-              {galleryImages.map((image) => (
+              {galleryImages.map((image, index) => (
                 <div key={image.src} className={classes.slide}>
-                  <img src={image.src} alt={image.alt} loading="lazy" />
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    loading="lazy"
+                    onClick={() => openModal(index)}
+                    style={{ cursor: 'pointer' }}
+                  />
                 </div>
               ))}
             </div>
@@ -131,7 +175,7 @@ export const Galeria = () => {
             aria-label="Siguiente imagen"
             onClick={goToNext}
           >
-            {'>'}
+            <img src="/La-Felipa/assets/flecha-derecha.svg" alt="Siguiente" />
           </button>
         </div>
 
@@ -147,6 +191,42 @@ export const Galeria = () => {
           ))}
         </div>
       </div>
+
+      {isModalOpen && selectedImageIndex !== null && (
+        <div className={classes.modal} onClick={closeModal}>
+          <div className={classes.modalContent} onClick={(e) => e.stopPropagation()}>
+            <button className={classes.closeButton} onClick={closeModal} aria-label="Cerrar">
+              ✕
+            </button>
+
+            <button
+              className={`${classes.modalNavButton} ${classes.modalPrevButton}`}
+              onClick={goToModalPrevious}
+              aria-label="Imagen anterior"
+            >
+              <img src="/La-Felipa/assets/flecha-izquierda.svg" alt="Anterior" />
+            </button>
+
+            <img
+              src={galleryImages[selectedImageIndex].src}
+              alt={galleryImages[selectedImageIndex].alt}
+              className={classes.modalImage}
+            />
+
+            <button
+              className={`${classes.modalNavButton} ${classes.modalNextButton}`}
+              onClick={goToModalNext}
+              aria-label="Siguiente imagen"
+            >
+              <img src="/La-Felipa/assets/flecha-derecha.svg" alt="Siguiente" />
+            </button>
+
+            <div className={classes.modalCounter}>
+              {selectedImageIndex + 1} / {galleryImages.length}
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

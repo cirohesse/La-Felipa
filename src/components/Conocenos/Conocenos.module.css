@@ -1,6 +1,6 @@
 .conocenos {
   background-color: var(--light-bg);
-  padding: 5rem 2rem;
+  padding: 3.5rem 2rem;
 }
 
 .conocenosContainer {
@@ -51,7 +51,7 @@
 
 @media (max-width: 768px) {
   .conocenos {
-    padding: 3rem 1.5rem;
+    padding: 2.25rem 1.5rem;
   }
 
   .conocenosContainer {
