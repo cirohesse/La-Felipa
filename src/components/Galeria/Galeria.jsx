@@ -130,7 +130,7 @@ export const Galeria = () => {
   };
 
   return (
-    <section className={classes.galeria}>
+    <div className={classes.galeria}>
       <div className={classes.galeriaContainer}>
         <h2>GALERÍA</h2>
         <p className={classes.galeriaSubtitle}>Descubri cada rincon de La Felipa</p>
@@ -227,6 +227,6 @@ export const Galeria = () => {
           </div>
         </div>
       )}
-    </section>
+    </div>
   );
 };

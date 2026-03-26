@@ -9,25 +9,11 @@ main {
   flex: 1;
 }
 
-section {
-  width: 100%;
-}
-
-/* El hero ocupa el viewport completo, otras secciones tienen padding */
-section#home {
-  padding: 0;
-}
-
-section:not(#home) {
-  padding-top: 0rem;
-}
-
 section#servicios {
-  scroll-margin-top: 9.5rem;
+  scroll-margin-top: 8.5rem;
 }
 
 section#galeria {
-  padding-top: 1.5rem;
   scroll-margin-top: 8.5rem;
 }
 
@@ -37,12 +23,7 @@ section#galeria {
   }
 
   section#galeria {
-    padding-top: 1rem;
     scroll-margin-top: 5.5rem;
-  }
-
-  section:not(#home) {
-    padding-top: 1.25rem;
   }
 
   main {

@@ -74,10 +74,6 @@ button {
   font-family: inherit;
 }
 
-section {
-  padding: 0rem 0rem 5rem 0rem;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -86,9 +82,5 @@ section {
 @media (max-width: 768px) {
   h2 {
     font-size: 1.8rem;
-  }
-
-  section {
-    padding: 3rem 1.5rem;
   }
 }

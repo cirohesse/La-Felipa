@@ -2,7 +2,7 @@ import classes from './Conocenos.module.css';
 
 export const Conocenos = () => {
   return (
-    <section className={classes.conocenos}>
+    <div className={classes.conocenos}>
       <div className={classes.conocenosContainer}>
         <div className={classes.conocenosText}>
           <h2>CONOCENOS</h2>
@@ -39,6 +39,6 @@ export const Conocenos = () => {
           <img src="/La-Felipa/assets/tranquera-la-felipa.jpg" alt="Tranquera La Felipa" />
         </div>
       </div>
-    </section>
+    </div>
   );
 };

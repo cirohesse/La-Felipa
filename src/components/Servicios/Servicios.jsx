@@ -95,7 +95,7 @@ const servicios = [
 
 export const Servicios = () => {
   return (
-    <section className={classes.servicios}>
+    <div className={classes.servicios}>
       <div className={classes.serviciosContainer}>
         <h2>SERVICIOS Y COMODIDADES</h2>
 
@@ -126,6 +126,6 @@ export const Servicios = () => {
           </p>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
