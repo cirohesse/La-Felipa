@@ -43,6 +43,8 @@ export const Galeria = () => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
   const touchStartX = useRef(null);
   const touchEndX = useRef(null);
+  const modalTouchStartX = useRef(null);
+  const modalTouchEndX = useRef(null);
 
   useEffect(() => {
     // Reinicia el conteo cada vez que cambia la imagen, incluso por interacción manual.
@@ -129,6 +131,33 @@ export const Galeria = () => {
     touchEndX.current = null;
   };
 
+  const handleModalTouchStart = (event) => {
+    modalTouchStartX.current = event.changedTouches[0].clientX;
+    modalTouchEndX.current = null;
+  };
+
+  const handleModalTouchMove = (event) => {
+    modalTouchEndX.current = event.changedTouches[0].clientX;
+  };
+
+  const handleModalTouchEnd = () => {
+    if (modalTouchStartX.current === null || modalTouchEndX.current === null) {
+      return;
+    }
+
+    const swipeDistance = modalTouchStartX.current - modalTouchEndX.current;
+    const minSwipeDistance = 45;
+
+    if (swipeDistance > minSwipeDistance) {
+      goToModalNext();
+    } else if (swipeDistance < -minSwipeDistance) {
+      goToModalPrevious();
+    }
+
+    modalTouchStartX.current = null;
+    modalTouchEndX.current = null;
+  };
+
   return (
     <div className={classes.galeria}>
       <div className={classes.galeriaContainer}>
@@ -194,7 +223,13 @@ export const Galeria = () => {
 
       {isModalOpen && selectedImageIndex !== null && (
         <div className={classes.modal} onClick={closeModal}>
-          <div className={classes.modalContent} onClick={(e) => e.stopPropagation()}>
+          <div
+            className={classes.modalContent}
+            onClick={(e) => e.stopPropagation()}
+            onTouchStart={handleModalTouchStart}
+            onTouchMove={handleModalTouchMove}
+            onTouchEnd={handleModalTouchEnd}
+          >
             <button className={classes.closeButton} onClick={closeModal} aria-label="Cerrar">
               ✕
             </button>
