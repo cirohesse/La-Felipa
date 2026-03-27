@@ -13,6 +13,10 @@ section#servicios {
   scroll-margin-top: 8.5rem;
 }
 
+section#tarifas {
+  scroll-margin-top: 8.5rem;
+}
+
 section#galeria {
   scroll-margin-top: 8.5rem;
 }
@@ -24,6 +28,10 @@ section#conocenos {
 @media (max-width: 768px) {
   section#servicios {
     scroll-margin-top: 6.5rem;
+  }
+
+  section#tarifas {
+    scroll-margin-top: 5.5rem;
   }
 
   section#galeria {

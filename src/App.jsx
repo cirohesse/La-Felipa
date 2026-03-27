@@ -4,6 +4,7 @@ import { Hero } from './components/Hero';
 import { Conocenos } from './components/Conocenos';
 import { Servicios } from './components/Servicios';
 import { Galeria } from './components/Galeria';
+import { Tarifas } from './components/Tarifas';
 import { Footer } from './components/Footer';
 import './styles/App.css';
 
@@ -33,6 +34,9 @@ function App() {
         </section>
         <section id="galeria">
           <Galeria />
+        </section>
+        <section id="tarifas">
+          <Tarifas />
         </section>
       </main>
       <Footer />

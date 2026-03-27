@@ -1,0 +1,167 @@
+.tarifas {
+  background-color: var(--white);
+  padding: 3.5rem 2rem;
+}
+
+.tarifasContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tarifasContainer h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2.5rem;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.promoCard,
+.formCard {
+  background-color: var(--white);
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 12px 30px rgba(44, 44, 44, 0.12);
+}
+
+.promoCard {
+  border-left: 6px solid var(--primary-color);
+}
+
+.promoTag {
+  display: inline-block;
+  background-color: var(--light-bg);
+  color: var(--primary-color);
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.promoCard h3 {
+  color: var(--dark-text);
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.promoPrecio {
+  font-size: 1.55rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.promoVigencia {
+  color: var(--secondary-color);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.promoDetalle {
+  color: var(--dark-text);
+  margin-bottom: 1.1rem;
+  line-height: 1.7;
+}
+
+.promoNota {
+  background-color: #fbf3ea;
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.formCard h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.form label {
+  font-size: 0.9rem;
+  color: var(--dark-text);
+  margin-top: 0.35rem;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  border: 1px solid #d7c8b5;
+  border-radius: 10px;
+  padding: 0.75rem 0.9rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--dark-text);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 3px rgba(74, 155, 167, 0.15);
+}
+
+.form textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.form button {
+  margin-top: 0.7rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.form button:hover {
+  background-color: #70552f;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 900px) {
+  .contentGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .tarifas {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .promoCard,
+  .formCard {
+    padding: 1.5rem;
+  }
+
+  .promoCard h3 {
+    font-size: 1.5rem;
+  }
+
+  .promoPrecio {
+    font-size: 1.3rem;
+  }
+}
