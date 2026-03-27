@@ -15,7 +15,13 @@ export const Footer = () => {
           </p>
           <p>
             <strong>Email:</strong>{' '}
-            <a href="mailto:lafelipa.cba@gmail.com">lafelipa.cba@gmail.com</a>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=lafelipa.cba@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              lafelipa.cba@gmail.com
+            </a>
           </p>
         </div>
 

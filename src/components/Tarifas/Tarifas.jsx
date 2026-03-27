@@ -85,6 +85,7 @@ const initialForm = {
 
 export const Tarifas = () => {
   const [formData, setFormData] = useState(initialForm);
+  const destinationEmail = 'lafelipa.cba@gmail.com';
 
   const promoActual = useMemo(() => {
     const mesActual = new Date().getMonth();
@@ -102,15 +103,32 @@ export const Tarifas = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const subject = encodeURIComponent(`Consulta web - ${promoActual.vigencia}`);
-    const body = encodeURIComponent(
+    const subject = `Consulta web - ${promoActual.vigencia}`;
+    const body =
       `Nombre: ${formData.nombre}\n` +
-        `Email: ${formData.email}\n` +
-        `Teléfono: ${formData.telefono || 'No informado'}\n\n` +
-        `Mensaje:\n${formData.mensaje}`
-    );
+      `Email: ${formData.email}\n` +
+      `Teléfono: ${formData.telefono || 'No informado'}\n\n` +
+      `Mensaje:\n${formData.mensaje}`;
 
-    window.location.href = `mailto:lafelipa.cba@gmail.com?subject=${subject}&body=${body}`;
+    const gmailParams = new URLSearchParams({
+      view: 'cm',
+      fs: '1',
+      to: destinationEmail,
+      su: subject,
+      body,
+    });
+
+    const gmailComposeUrl = `https://mail.google.com/mail/?${gmailParams.toString()}`;
+    const openedWindow = window.open(gmailComposeUrl, '_blank', 'noopener,noreferrer');
+
+    if (!openedWindow) {
+      const mailtoUrl =
+        `mailto:${destinationEmail}` +
+        `?subject=${encodeURIComponent(subject)}` +
+        `&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoUrl;
+    }
+
     setFormData(initialForm);
   };
 
