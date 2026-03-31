@@ -6,13 +6,13 @@ const promocionesPorMes = [
     titulo: 'Escapada de Verano',
     precio: '$92.000 por noche',
     vigencia: 'Enero',
-    detalle: 'Incluye desayuno seco y check-out extendido sin cargo.',
+    detalle: '10% off en estadías de 3 noches o más',
   },
   {
     titulo: 'Promo San Valentín',
     precio: '$95.000 por noche',
     vigencia: 'Febrero',
-    detalle: 'Decoración especial y brindis de bienvenida para parejas.',
+    detalle: '10% off en estadías de 3 noches o más',
   },
   {
     titulo: 'Otoño en La Felipa',
@@ -24,55 +24,55 @@ const promocionesPorMes = [
     titulo: 'Escapada de Abril',
     precio: '$86.000 por noche',
     vigencia: 'Abril',
-    detalle: 'Incluye early check-in sujeto a disponibilidad.',
+    detalle: '10% off en estadías de 3 noches o más',
   },
   {
     titulo: 'Promo de Mayo',
     precio: '$84.000 por noche',
     vigencia: 'Mayo',
-    detalle: 'Noche de bienvenida con degustación regional.',
+    detalle: '10% off en estadías de 3 noches o más',
   },
   {
     titulo: 'Invierno Anticipado',
     precio: '$90.000 por noche',
     vigencia: 'Junio',
-    detalle: 'Calefacción central y bebida caliente de cortesía.',
+    detalle: '10% off en estadías de 3 noches o más',
   },
   {
     titulo: 'Vacaciones de Invierno',
     precio: '$98.000 por noche',
     vigencia: 'Julio',
-    detalle: 'Beneficio especial para estadías familiares.',
+    detalle: '10% off en estadías de 3 noches o más',
   },
   {
     titulo: 'Promo de Agosto',
     precio: '$89.000 por noche',
     vigencia: 'Agosto',
-    detalle: '15% off en segunda noche para reservas directas.',
+    detalle: '10% off en estadías de 3 noches o más',
   },
   {
     titulo: 'Primavera Temprana',
     precio: '$87.000 por noche',
     vigencia: 'Septiembre',
-    detalle: 'Incluye kit de senderismo para recorrer la zona.',
+    detalle: '10% off en estadías de 3 noches o más',
   },
   {
     titulo: 'Promo de Octubre',
     precio: '$91.000 por noche',
     vigencia: 'Octubre',
-    detalle: 'Noche romántica con ambientación especial.',
+    detalle: '10% off en estadías de 3 noches o más',
   },
   {
     titulo: 'Pre Verano',
     precio: '$93.000 por noche',
     vigencia: 'Noviembre',
-    detalle: 'Incluye late check-out para estirar tu estadía.',
+    detalle: '10% off en estadías de 3 noches o más',
   },
   {
     titulo: 'Fiestas en La Felipa',
     precio: '$110.000 por noche',
     vigencia: 'Diciembre',
-    detalle: 'Pack especial para Navidad y Fin de Año.',
+    detalle: '10% off en estadías de 3 noches o más',
   },
 ];
 
@@ -144,9 +144,7 @@ export const Tarifas = () => {
             <p className={classes.promoPrecio}>{promoActual.precio}</p>
             <p className={classes.promoVigencia}>Vigencia: {promoActual.vigencia}</p>
             <p className={classes.promoDetalle}>{promoActual.detalle}</p>
-            <p className={classes.promoNota}>
-              Consultanos por promociones acumulables y descuentos por cantidad de noches.
-            </p>
+            <p className={classes.promoNota}>Consultanos por otras promociones vigentes.</p>
           </article>
 
           <article className={classes.formCard}>

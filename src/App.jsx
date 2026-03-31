@@ -6,6 +6,7 @@ import { Servicios } from './components/Servicios';
 import { Galeria } from './components/Galeria';
 import { Tarifas } from './components/Tarifas';
 import { Footer } from './components/Footer';
+import { WhatsAppButton } from './components/WhatsAppButton';
 import './styles/App.css';
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
         </section>
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }

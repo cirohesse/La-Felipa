@@ -44,6 +44,17 @@
   margin-bottom: 1rem;
   color: var(--dark-text);
   font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.contactIcon {
+  width: 20px;
+  height: 20px;
+  color: var(--secondary-color);
+  flex-shrink: 0;
 }
 
 .footerContact a {
