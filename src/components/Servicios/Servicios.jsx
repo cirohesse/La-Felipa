@@ -4,7 +4,7 @@ const servicios = [
   {
     id: 'desayuno',
     titulo: 'DESAYUNO',
-    descripcion: 'seco incluido',
+    descripcion: 'incluido',
     icono: 'logo-cafe.svg',
   },
   {

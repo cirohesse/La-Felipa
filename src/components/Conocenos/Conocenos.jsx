@@ -16,10 +16,10 @@ export const Conocenos = () => {
           </p>
 
           <p>
-            Pero su fama no debía sólo a ello. Su hogar, fue una histórica tapera de piedra contigua
-            a un mágico arroyo; y sus tierras, posteriormente, se convirtieron en un punto de
-            encuentro icónico, conformando el rincón futbolístico de los primeros pobladores del
-            lugar.
+            Pero su fama no se debía sólo a ello. Su hogar, fue una histórica tapera de piedra
+            contigua a un mágico arroyo; y sus tierras, posteriormente, se convirtieron en el punto
+            de encuentro de los estudiantes en su día y en el icónico rincón futbolístico de los
+            primeros pobladores del lugar.
           </p>
 
           <p>
