@@ -16,7 +16,7 @@ const promocionesPorMes = [
   },
   {
     titulo: 'Otoño en La Felipa',
-    precio: '$88.000 por noche',
+    precio: '$89.000 por noche',
     vigencia: 'Marzo',
     detalle: '10% off en estadías de 3 noches o más.',
   },
