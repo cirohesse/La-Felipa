@@ -202,7 +202,7 @@ export const Galeria = () => {
             aria-label="Imagen anterior"
             onClick={goToPrevious}
           >
-            <img src="/La-Felipa/assets/flecha-izquierda.svg" alt="Anterior" />
+            <img src="/assets/flecha-izquierda.svg" alt="Anterior" />
           </button>
 
           <div
@@ -235,7 +235,7 @@ export const Galeria = () => {
             aria-label="Siguiente imagen"
             onClick={goToNext}
           >
-            <img src="/La-Felipa/assets/flecha-derecha.svg" alt="Siguiente" />
+            <img src="/assets/flecha-derecha.svg" alt="Siguiente" />
           </button>
         </div>
 
