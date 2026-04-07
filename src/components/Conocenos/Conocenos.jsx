@@ -36,7 +36,7 @@ export const Conocenos = () => {
         </div>
 
         <div className={classes.conocenosImage}>
-          <img src="/La-Felipa/assets/tranquera-la-felipa.jpg" alt="Tranquera La Felipa" />
+          <img src="/assets/tranquera-la-felipa.jpg" alt="Tranquera La Felipa" />
         </div>
       </div>
     </div>

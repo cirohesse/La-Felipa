@@ -4,7 +4,7 @@ export const Hero = () => {
   return (
     <div className={classes.hero}>
       <img
-        src="/La-Felipa/assets/hero.jpg"
+        src="/assets/hero.jpg"
         alt="La Felipa - Cabañas en La Cumbrecita"
         className={classes.heroImage}
       />

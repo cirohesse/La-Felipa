@@ -5,7 +5,7 @@ export const Footer = () => {
     <footer className={classes.footer} id="contacto">
       <div className={classes.footerContainer}>
         <div className={classes.footerLogo}>
-          <img src="/La-Felipa/assets/logo-lf-simplificado.png" alt="La Felipa Logo" />
+          <img src="/assets/logo-lf-simplificado.png" alt="La Felipa Logo" />
         </div>
 
         <div className={classes.footerContact}>

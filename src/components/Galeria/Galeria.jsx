@@ -33,7 +33,7 @@ const imageNames = [
 ];
 
 const galleryImages = imageNames.map((image) => ({
-  src: `/La-Felipa/assets/gallery/${image}`,
+  src: `/assets/gallery/${image}`,
   alt: `Galeria La Felipa ${image.replace('.JPG', '')}`,
 }));
 
@@ -270,7 +270,7 @@ export const Galeria = () => {
               onClick={goToModalPrevious}
               aria-label="Imagen anterior"
             >
-              <img src="/La-Felipa/assets/flecha-izquierda.svg" alt="Anterior" />
+              <img src="/assets/flecha-izquierda.svg" alt="Anterior" />
             </button>
 
             <img
@@ -284,7 +284,7 @@ export const Galeria = () => {
               onClick={goToModalNext}
               aria-label="Siguiente imagen"
             >
-              <img src="/La-Felipa/assets/flecha-derecha.svg" alt="Siguiente" />
+              <img src="/assets/flecha-derecha.svg" alt="Siguiente" />
             </button>
 
             <div className={classes.modalCounter}>

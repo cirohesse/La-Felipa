@@ -67,7 +67,7 @@ export const Header = ({ onNavigate }) => {
           </nav>
         </div>
         <button className={classes.logo} onClick={() => handleNavClick('home')} aria-label="Home">
-          <img src="/La-Felipa/assets/logo-la-felipa.png" alt="La Felipa Logo" />
+          <img src="/assets/logo-la-felipa.png" alt="La Felipa Logo" />
         </button>
       </div>
     </header>
