@@ -22,9 +22,9 @@ const promocionesPorMes = [
   },
   {
     titulo: 'Escapada de Abril',
-    precio: '$86.000 por noche',
+    precio: '$100.000 por noche',
     vigencia: 'Abril',
-    detalle: '10% off en estadías de 3 noches o más',
+    detalle: 'Promoción válida para estadías de 3 noches o más',
   },
   {
     titulo: 'Promo de Mayo',
