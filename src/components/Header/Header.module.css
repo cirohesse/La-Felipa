@@ -131,7 +131,7 @@
   .navButton {
     width: 100%;
     text-align: center;
-    padding: 1rem;
+    padding: 0.8rem 1rem;
     border-bottom: 1px solid var(--light-bg);
     color: black;
   }

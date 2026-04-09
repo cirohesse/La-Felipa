@@ -58,13 +58,33 @@
 }
 
 .footerContact a {
-  color: var(--secondary-color);
   font-weight: 600;
-  transition: color 0.3s ease;
 }
 
-.footerContact a:hover {
-  color: var(--primary-color);
+.locationButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.locationButton:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  transform: scale(1.05);
+}
+
+.locationButton .contactIcon {
+  color: var(--white);
 }
 
 .socialIcons {

@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import classes from './Tarifas.module.css';
 
 const promocionesPorMes = [
@@ -24,7 +25,7 @@ const promocionesPorMes = [
     titulo: 'Escapada de Abril',
     precio: '$100.000 por noche',
     vigencia: 'Abril',
-    detalle: 'Promoción válida para estadías de 3 noches o más',
+    detalle: 'Promoción válida para estadías de 2 noches o más',
   },
   {
     titulo: 'Promo de Mayo',
@@ -85,7 +86,13 @@ const initialForm = {
 
 export const Tarifas = () => {
   const [formData, setFormData] = useState(initialForm);
-  const destinationEmail = 'lafelipa.cba@gmail.com';
+  const [successMessage, setSuccessMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+  const [isSending, setIsSending] = useState(false);
+
+  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
   const promoActual = useMemo(() => {
     const mesActual = new Date().getMonth();
@@ -94,42 +101,62 @@ export const Tarifas = () => {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
+    if (name === 'telefono') {
+      if (!/^[0-9 +\-]*$/.test(value) || value.length > 20) return;
+    }
     setFormData((prev) => ({
       ...prev,
       [name]: value,
     }));
+    setSuccessMessage('');
+    setErrorMessage('');
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const subject = `Consulta web - ${promoActual.vigencia}`;
-    const body =
-      `Nombre: ${formData.nombre}\n` +
-      `Email: ${formData.email}\n` +
-      `Teléfono: ${formData.telefono || 'No informado'}\n\n` +
-      `Mensaje:\n${formData.mensaje}`;
-
-    const gmailParams = new URLSearchParams({
-      view: 'cm',
-      fs: '1',
-      to: destinationEmail,
-      su: subject,
-      body,
-    });
-
-    const gmailComposeUrl = `https://mail.google.com/mail/?${gmailParams.toString()}`;
-    const openedWindow = window.open(gmailComposeUrl, '_blank', 'noopener,noreferrer');
-
-    if (!openedWindow) {
-      const mailtoUrl =
-        `mailto:${destinationEmail}` +
-        `?subject=${encodeURIComponent(subject)}` +
-        `&body=${encodeURIComponent(body)}`;
-      window.location.href = mailtoUrl;
+    if (!serviceId || !templateId || !publicKey) {
+      setErrorMessage('Falta configurar EmailJS. Revisá las variables VITE_EMAILJS_*');
+      setSuccessMessage('');
+      return;
     }
 
-    setFormData(initialForm);
+    setIsSending(true);
+    setErrorMessage('');
+
+    try {
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          promo_vigencia: promoActual.vigencia,
+          nombre: formData.nombre,
+          name: formData.nombre,
+          email: formData.email,
+          telefono: formData.telefono || 'No informado',
+          mensaje: formData.mensaje,
+          message: formData.mensaje,
+          tiempo: new Date().toLocaleString('es-AR'),
+          time: new Date().toLocaleString('es-AR'),
+          to_email: 'lafelipa.cba@gmail.com',
+        },
+        { publicKey }
+      );
+
+      setFormData(initialForm);
+      setSuccessMessage('Su consulta ha sido enviada correctamente.');
+    } catch (error) {
+      console.error('EmailJS error:', error);
+      const reason =
+        (error && typeof error === 'object' && 'text' in error && error.text) ||
+        (error && typeof error === 'object' && 'message' in error && error.message) ||
+        'No se pudo enviar la consulta. Intente nuevamente.';
+
+      setErrorMessage(`No se pudo enviar la consulta. ${reason}`);
+      setSuccessMessage('');
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (
@@ -144,7 +171,7 @@ export const Tarifas = () => {
             <p className={classes.promoPrecio}>{promoActual.precio}</p>
             <p className={classes.promoVigencia}>Vigencia: {promoActual.vigencia}</p>
             <p className={classes.promoDetalle}>{promoActual.detalle}</p>
-            <p className={classes.promoNota}>Consultanos por otras promociones vigentes.</p>
+            <p className={classes.promoNota}>Consultanos por otras promociones vigentes</p>
           </article>
 
           <article className={classes.formCard}>
@@ -177,6 +204,10 @@ export const Tarifas = () => {
                 type="tel"
                 value={formData.telefono}
                 onChange={handleChange}
+                maxLength={20}
+                pattern="[0-9 +\-]*"
+                inputMode="tel"
+                title="Solo números, espacios, + y -, hasta 20 caracteres"
               />
 
               <label htmlFor="mensaje">Consulta</label>
@@ -189,7 +220,12 @@ export const Tarifas = () => {
                 required
               />
 
-              <button type="submit">Enviar consulta</button>
+              <button type="submit" disabled={isSending}>
+                {isSending ? 'Enviando...' : 'Enviar consulta'}
+              </button>
+
+              {successMessage && <p className={classes.successMessage}>{successMessage}</p>}
+              {errorMessage && <p className={classes.errorMessage}>{errorMessage}</p>}
             </form>
           </article>
         </div>
