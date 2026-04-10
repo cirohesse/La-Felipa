@@ -121,11 +121,14 @@
 }
 
 .footerBottom {
-  border-top: 1px solid #e8e0d0;
-  padding-top: 1rem;
   text-align: center;
   color: var(--dark-text);
-  font-size: 0.85rem;
+}
+
+.footerBottom p {
+  font-size: 0.75rem;
+  line-height: 1.35;
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {

@@ -131,13 +131,10 @@ export const Tarifas = () => {
         {
           promo_vigencia: promoActual.vigencia,
           nombre: formData.nombre,
-          name: formData.nombre,
           email: formData.email,
           telefono: formData.telefono || 'No informado',
           mensaje: formData.mensaje,
-          message: formData.mensaje,
           tiempo: new Date().toLocaleString('es-AR'),
-          time: new Date().toLocaleString('es-AR'),
           to_email: 'lafelipa.cba@gmail.com',
         },
         { publicKey }
@@ -167,9 +164,10 @@ export const Tarifas = () => {
         <div className={classes.contentGrid}>
           <article className={classes.promoCard}>
             <p className={classes.promoTag}>Promoción del mes</p>
-            <h3>{promoActual.titulo}</h3>
+            <h3 className={classes.promoTitle}>{promoActual.titulo}</h3>
             <p className={classes.promoPrecio}>{promoActual.precio}</p>
             <p className={classes.promoVigencia}>Vigencia: {promoActual.vigencia}</p>
+            <div className={classes.promoDivider} />
             <p className={classes.promoDetalle}>{promoActual.detalle}</p>
             <p className={classes.promoNota}>Consultanos por otras promociones vigentes</p>
           </article>
