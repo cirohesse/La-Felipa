@@ -40,7 +40,7 @@ export const Footer = () => {
             </a>
           </p>
           <a
-            href="https://maps.app.goo.gl/zJSEzcKMw8uBXjoh8"
+            href="https://maps.app.goo.gl/QeJ2rGkmVy7o9NqV7"
             target="_blank"
             rel="noopener noreferrer"
             className={classes.locationButton}
