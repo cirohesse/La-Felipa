@@ -36,6 +36,9 @@ src/
 └── App.jsx               ← Componente principal
 
 public/assets/            ← Imágenes y logos
+
+Nota: la aplicacion usa `public/assets` para servir archivos en desarrollo y produccion.
+La carpeta `assets` en la raiz (si existe) no se usa en runtime.
 ```
 
 ## Comandos Disponibles

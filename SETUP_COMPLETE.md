@@ -4,6 +4,9 @@
 
 Tu proyecto React completo está listo en: `C:\Users\Ciro\development\La-Felipa`
 
+> Nota importante: el sitio carga imagenes, iconos y fuentes desde `public/assets`.
+> Si existe una carpeta `assets` en la raiz, se considera opcional (respaldo/edicion) y no participa del runtime.
+
 ### 📁 Estructura del Proyecto
 
 ```

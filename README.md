@@ -29,6 +29,9 @@ npm run dev
 
 El sitio estará disponible en `http://localhost:5173`
 
+Nota: la app sirve archivos estaticos unicamente desde `public/assets` (rutas `/assets/...`).
+La carpeta `assets` en la raiz puede usarse como respaldo/edicion, pero no se usa en runtime.
+
 ## Estructura del Proyecto
 
 ```
