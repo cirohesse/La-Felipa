@@ -5,7 +5,7 @@ export const Conocenos = () => {
     <div className={classes.conocenos}>
       <div className={classes.conocenosContainer}>
         <div className={classes.conocenosText}>
-          <h2>CONOCENOS</h2>
+          <h2>CABAÑAS LA FELIPA</h2>
           <p className={classes.intro}>Queremos contarte la historia de nuestro lugar soñado</p>
 
           <p>

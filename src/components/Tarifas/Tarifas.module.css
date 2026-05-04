@@ -75,6 +75,14 @@
   margin-bottom: 0;
 }
 
+.chekHorario {
+  color: var(--primary-color, #8b6f47);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+}
+
 .promoVigencia {
   color: var(--secondary-color);
   font-weight: 700;
