@@ -166,8 +166,8 @@ export const Tarifas = () => {
             <p className={classes.promoTag}>Promoción del mes</p>
             <h3 className={classes.promoTitle}>{promoActual.titulo}</h3>
             <p className={classes.promoPrecio}>{promoActual.precio}</p>
-            <p className={classes.chekHorario}>Check-in: 2:00 PM</p>
-            <p className={classes.chekHorario}>Check-out: 11:00 AM</p>
+            <p className={classes.chekHorario}>Check-in: 14:00 HS</p>
+            <p className={classes.chekHorario}>Check-out: 11:00 HS</p>
             <p className={classes.promoVigencia}>Vigencia: {promoActual.vigencia}</p>
             <div className={classes.promoDivider} />
             <p className={classes.promoDetalle}>{promoActual.detalle}</p>
