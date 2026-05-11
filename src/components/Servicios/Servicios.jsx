@@ -2,6 +2,12 @@ import classes from './Servicios.module.css';
 
 const servicios = [
   {
+    id: 'cama',
+    titulo: 'SUITES',
+    descripcion: 'para 2 personas con cama matrimonial',
+    icono: 'logo-cama.svg',
+  },
+  {
     id: 'desayuno',
     titulo: 'DESAYUNO',
     descripcion: 'incluido',
@@ -42,12 +48,6 @@ const servicios = [
     titulo: 'JACUZZI',
     descripcion: 'en la habitación',
     icono: 'logo-jacuzzi.svg',
-  },
-  {
-    id: 'cama',
-    titulo: 'CAMA MATRIMONIAL',
-    descripcion: 'en todas las unidades',
-    icono: 'logo-cama.svg',
   },
   {
     id: 'terraza',
