@@ -1,5 +1,7 @@
 import classes from './Servicios.module.css';
 
+const ASSET_VERSION = '20260511';
+
 const servicios = [
   {
     id: 'cama',
@@ -103,7 +105,7 @@ export const Servicios = () => {
           {servicios.map((servicio) => (
             <div key={servicio.id} className={classes.servicioCard}>
               <div className={classes.servicioIcon}>
-                <img src={`/assets/${servicio.icono}`} alt={servicio.titulo} />
+                <img src={`/assets/${servicio.icono}?v=${ASSET_VERSION}`} alt={servicio.titulo} />
               </div>
               <h3>{servicio.titulo}</h3>
               <p>{servicio.descripcion}</p>
