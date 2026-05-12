@@ -117,12 +117,14 @@ export const Servicios = () => {
             naturaleza autóctona, el avistaje de aves y los arroyos aledaños
           </p>
           <p>
-            CON UNA <strong>UBICACIÓN EXCEPCIONAL</strong> en la base del cerro Wank y a 700 mts del
+            con una <strong>UBICACIÓN EXCEPCIONAL</strong> en la base del cerro Wank y a 700 mts del
             lago de los patos y el lago de las Truchas
           </p>
           <p>
-            VAS A PODER ACCEDER A LAS MEJORES{' '}
-            <strong>VISTAS DE LA CUMBRECITA Y EL PEÑÓN DEL ÁGUILA</strong>
+            vas a poder acceder a las mejores <strong>VISTAS DE LA CUMBRECITA Y EL PEÑÓN DEL ÁGUILA</strong>
+          </p>
+          <p>
+            <strong>IMPORTANTE: NO SE PERMITE FUMAR DENTRO DE LAS SUITES, NI EL INGRESO CON MASCOTAS</strong>
           </p>
         </div>
       </div>
