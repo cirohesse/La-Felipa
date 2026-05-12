@@ -126,7 +126,7 @@ export const Servicios = () => {
             vas a poder acceder a las mejores <strong>VISTAS DE LA CUMBRECITA Y EL PEÑÓN DEL ÁGUILA</strong>
           </p>
           <p>
-            <strong>IMPORTANTE: NO SE PERMITE FUMAR DENTRO DE LAS SUITES, NI EL INGRESO CON MASCOTAS</strong>
+            <strong style={{ color: 'var(--secondary-color)' }}>IMPORTANTE: NO ESTÁ PERMITIDO FUMAR DENTRO DE LAS SUITES, NI EL INGRESO CON MASCOTAS.</strong>
           </p>
         </div>
       </div>
