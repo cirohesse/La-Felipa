@@ -69,6 +69,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  user-select: none;
 }
 
 .navButton:hover {
@@ -78,6 +79,8 @@
 
 .navButton img {
   filter: brightness(0) invert(1);
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .dots {
