@@ -29,6 +29,7 @@
   padding: 0;
   cursor: pointer;
   transition: opacity 0.3s ease;
+  user-select: none;
 }
 
 .logo:hover {
@@ -39,6 +40,8 @@
   height: 90px;
   width: auto;
   margin-top: 0rem;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .navWrapper {
