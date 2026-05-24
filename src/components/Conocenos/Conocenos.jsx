@@ -6,7 +6,7 @@ export const Conocenos = () => {
       <div className={classes.conocenosContainer}>
         <div className={classes.conocenosText}>
           <h2>CABAÑAS LA FELIPA</h2>
-          <p className={classes.intro}>Queremos contarte la historia de nuestro lugar soñado</p>
+          <p className={classes.intro}>Queremos contarte la historia de nuestra tierra soñada</p>
 
           <p>
             Mucho tiempo atrás, habitaba en el encantador pueblo de la Cumbrecita, una mujer ilustre
@@ -24,13 +24,13 @@ export const Conocenos = () => {
 
           <p>
             Hoy, sobre el suelo que alguna vez vibró de alegrías y gambetas, se alzan las cabañas
-            que conservan las raíces, y reconocen la historia de Doña Félipa, quien ha dejado una
+            que conservan las raíces, y reconocen la historia de Doña Felipa, quien ha dejado una
             huella indeleble en el corazón del pueblo.
           </p>
 
           <p>
             Te invitamos a conocer y alojarte en el complejo de cabañas «La Felipa». Un proyecto
-            familiar, destinado a recibir a quienes deseen disfrutar de una cálida y tranquila
+            familiar, destinado a recibir a parejas que deseen disfrutar de una cálida y tranquila
             estadía, en el asombroso y atractivo valle de las Sierras Grandes de Córdoba.
           </p>
         </div>
