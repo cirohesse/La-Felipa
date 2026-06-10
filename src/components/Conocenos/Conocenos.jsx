@@ -6,7 +6,7 @@ export const Conocenos = () => {
       <div className={classes.conocenosContainer}>
         <div className={classes.conocenosText}>
           <h2>SUITES LA FELIPA</h2>
-          <p className={classes.intro}>Queremos contarte la historia de nuestras cabañas</p>
+          <p className={classes.intro}>Queremos contarte la historia que guardan nuestras cabañas</p>
 
           <p>
             Mucho tiempo atrás, habitaba en el encantador pueblo de la Cumbrecita, una mujer ilustre
