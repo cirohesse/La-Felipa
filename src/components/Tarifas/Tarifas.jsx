@@ -36,7 +36,7 @@ const promocionesPorMes = [
   {
     titulo: 'Invierno Anticipado',
     precio: '$150.000 por noche',
-    vigencia: 'Junio',
+    vigencia: 'a partir de julio $140.000 la noche por 3 noches o más',
     detalle: 'Promoción válida para 2 personas en estadías de 2 noches o más.',
   },
   {
@@ -168,7 +168,7 @@ export const Tarifas = () => {
             <p className={classes.promoPrecio}>{promoActual.precio}</p>
             <p className={classes.chekHorario}>Check-in: 14:00 HS</p>
             <p className={classes.chekHorario}>Check-out: 11:00 HS</p>
-            <p className={classes.promoVigencia}>Vigencia: {promoActual.vigencia}</p>
+            <p className={classes.promoVigencia}>Promo imperdible: {promoActual.vigencia}</p>
             <div className={classes.promoDivider} />
             <p className={classes.promoDetalle}>{promoActual.detalle}</p>
             <p className={classes.promoNota}>Consultanos por otras promos</p>
