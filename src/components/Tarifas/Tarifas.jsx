@@ -35,8 +35,8 @@ const promocionesPorMes = [
   },
   {
     titulo: 'Invierno Anticipado',
-    precio: '$150.000 por noche + 10% OFF FINDE LARGO!',
-    vigencia: 'Promo para el mes de Junio + 10% OFF 13, 14 y 15 de Junio',
+    precio: '$150.000 por noche',
+    vigencia: 'Junio',
     detalle: 'Promoción válida para 2 personas en estadías de 2 noches o más.',
   },
   {
@@ -171,7 +171,7 @@ export const Tarifas = () => {
             <p className={classes.promoVigencia}>Vigencia: {promoActual.vigencia}</p>
             <div className={classes.promoDivider} />
             <p className={classes.promoDetalle}>{promoActual.detalle}</p>
-            <p className={classes.promoNota}>Consulanos promos del mes de Julio y vacaciones de invierno</p>
+            <p className={classes.promoNota}>Consultanos por otras promos</p>
           </article>
 
           <article className={classes.formCard}>
