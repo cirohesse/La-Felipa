@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import classes from './Tarifas.module.css';
 
@@ -94,6 +94,13 @@ export const Tarifas = () => {
   const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
   const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
+  // Inicializar EmailJS al montar el componente
+  useEffect(() => {
+    if (publicKey) {
+      emailjs.init(publicKey);
+    }
+  }, [publicKey]);
+
   const promoActual = useMemo(() => {
     const mesActual = new Date().getMonth();
     return promocionesPorMes[mesActual];
@@ -116,7 +123,7 @@ export const Tarifas = () => {
     event.preventDefault();
 
     if (!serviceId || !templateId || !publicKey) {
-      setErrorMessage('Falta configurar EmailJS. Revisá las variables VITE_EMAILJS_*');
+      setErrorMessage('Su consulta no pudo ser enviada, intente contactarnos por nuestro Whatsapp, lamentamos los inconvenientes');
       setSuccessMessage('');
       return;
     }
