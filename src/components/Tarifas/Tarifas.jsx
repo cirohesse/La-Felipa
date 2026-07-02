@@ -178,7 +178,7 @@ export const Tarifas = () => {
             <p className={classes.promoVigencia}>Vigencia: {promoActual.vigencia}</p>
             <div className={classes.promoDivider} />
             <p className={classes.promoDetalle}>{promoActual.detalle}</p>
-            <p className={classes.promoNota}>¡Y CONSULTÁ LA PROMO IMPERDIBLE DE VACACIONES DE INVIERNO! En el mes de julio $140.000 la noche para 2 personas por 3 noches o más</p>
+            <p className={classes.promoNota}>Consultá otras promociones disponibles</p>
           </article>
 
           <article className={classes.formCard}>
