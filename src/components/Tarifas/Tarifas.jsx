@@ -40,7 +40,7 @@ const promocionesPorMes = [
     detalle: 'Promoción válida para 2 personas en estadías de 2 noches o más.',
   },
   {
-    titulo: 'Promo Invierno',
+    titulo: 'Vacaciones de Invierno',
     precio: '$150.000 por noche',
     vigencia: 'Julio',
     detalle: 'Promoción válida para 2 personas en estadías de 3 noches o más',
