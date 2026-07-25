@@ -40,8 +40,8 @@ const promocionesPorMes = [
     detalle: 'Promoción válida para 2 personas en estadías de 2 noches o más.',
   },
   {
-    titulo: 'Vacaciones de Invierno',
-    precio: '$140.000 por noche',
+    titulo: 'Promo Invierno',
+    precio: '$150.000 por noche',
     vigencia: 'Julio',
     detalle: 'Promoción válida para 2 personas en estadías de 3 noches o más',
   },
@@ -49,31 +49,31 @@ const promocionesPorMes = [
     titulo: 'Promo de Agosto',
     precio: '$150.000 por noche',
     vigencia: 'Agosto',
-    detalle: 'Promoción válida para 2 personas en estadías de 2 noches o más',
+    detalle: 'Promoción válida para 2 personas en estadías de 3 noches o más',
   },
   {
     titulo: 'Primavera Temprana',
     precio: '$150.000 por noche',
     vigencia: 'Septiembre',
-    detalle: 'Promoción válida para 2 personas en estadías de 2 noches o más',
+    detalle: 'Promoción válida para 2 personas en estadías de 3 noches o más',
   },
   {
     titulo: 'Promo de Octubre',
     precio: '$150.000 por noche',
     vigencia: 'Octubre',
-    detalle: 'Promoción válida para 2 personas en estadías de 2 noches o más',
+    detalle: 'Promoción válida para 2 personas en estadías de 3 noches o más',
   },
   {
     titulo: 'Pre Verano',
     precio: '$150.000 por noche',
     vigencia: 'Noviembre',
-    detalle: 'Promoción válida para 2 personas en estadías de 2 noches o más',
+    detalle: 'Promoción válida para 2 personas en estadías de 3 noches o más',
   },
   {
     titulo: 'Fiestas en La Felipa',
     precio: '$150.000 por noche',
     vigencia: 'Diciembre',
-    detalle: 'Promoción válida para 2 personas en estadías de 2 noches o más',
+    detalle: 'Promoción válida para 2 personas en estadías de 3 noches o más',
   },
 ];
 
@@ -170,7 +170,7 @@ export const Tarifas = () => {
 
         <div className={classes.contentGrid}>
           <article className={classes.promoCard}>
-            <p className={classes.promoTag}>Promoción del mes</p>
+            <p className={classes.promoTag}>Tarifa promocional</p>
             <h3 className={classes.promoTitle}>{promoActual.titulo}</h3>
             <p className={classes.promoPrecio}>{promoActual.precio}</p>
             <p className={classes.chekHorario}>Check-in: 14:00 HS</p>
@@ -178,7 +178,7 @@ export const Tarifas = () => {
             <p className={classes.promoVigencia}>Vigencia: {promoActual.vigencia}</p>
             <div className={classes.promoDivider} />
             <p className={classes.promoDetalle}>{promoActual.detalle}</p>
-            <p className={classes.promoNota}>Consultá otras promociones disponibles</p>
+            <p className={classes.promoNota}>Tarifa no promocional: $160.000 por noche para estadías menores a 3 noches</p>
           </article>
 
           <article className={classes.formCard}>
