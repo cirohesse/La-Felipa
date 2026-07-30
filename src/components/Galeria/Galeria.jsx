@@ -17,10 +17,9 @@ const imageNames = [
   'IMG_4786.JPG',
   'IMG_20.JPG',
   'IMG_18.JPG',
-  'IMG_21.JPG',
   'IMG_5006.JPG',
+  'IMG_21.JPG',
   'IMG_4508.JPG',
-  'IMG_4533.JPG',
 ];
 
 const galleryImages = imageNames.map((image) => ({
