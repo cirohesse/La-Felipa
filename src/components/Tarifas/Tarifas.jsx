@@ -5,73 +5,73 @@ import classes from './Tarifas.module.css';
 const promocionesPorMes = [
   {
     titulo: 'Escapada de Verano',
-    precio: '$150.000 por noche',
+    precio: '$165.000 por noche',
     vigencia: 'Enero',
-    detalle: 'Promoción válida para 2 personas en estadías de 2 noches o más',
+    detalle: 'Promoción válida para 2 personas en estadías de 3 noches o más',
   },
   {
     titulo: 'Promo San Valentín',
-    precio: '$150.000 por noche',
+    precio: '$165.000 por noche',
     vigencia: 'Febrero',
-    detalle: 'Promoción válida para 2 personas en estadías de 2 noches o más',
+    detalle: 'Promoción válida para 2 personas en estadías de 3 noches o más',
   },
   {
     titulo: 'Otoño en La Felipa',
-    precio: '$150.000 por noche',
+    precio: '$165.000 por noche',
     vigencia: 'Marzo',
-    detalle: 'Promoción válida para 2 personas en estadías de 2 noches o más',
+    detalle: 'Promoción válida para 2 personas en estadías de 3 noches o más',
   },
   {
     titulo: 'Escapada de Abril',
-    precio: '$150.000 por noche',
+    precio: '$165.000 por noche',
     vigencia: 'Abril',
-    detalle: 'Promoción válida para 2 personas en estadías de 2 noches o más',
+    detalle: 'Promoción válida para 2 personas en estadías de 3 noches o más',
   },
   {
     titulo: 'Promo de Mayo',
-    precio: '$150.000 por noche',
+    precio: '$165.000 por noche',
     vigencia: 'Mayo',
-    detalle: 'Promoción válida para 2 personas en estadías de 2 noches o más',
+    detalle: 'Promoción válida para 2 personas en estadías de 3 noches o más',
   },
   {
     titulo: 'Invierno Anticipado',
-    precio: '$150.000 por noche',
+    precio: '$165.000 por noche',
     vigencia: 'Junio',
-    detalle: 'Promoción válida para 2 personas en estadías de 2 noches o más.',
+    detalle: 'Promoción válida para 2 personas en estadías de 3 noches o más.',
   },
   {
     titulo: 'Vacaciones de Invierno',
-    precio: '$150.000 por noche',
+    precio: '$165.000 por noche',
     vigencia: 'Julio',
     detalle: 'Promoción válida para 2 personas en estadías de 3 noches o más',
   },
   {
     titulo: 'Promo de Agosto',
-    precio: '$150.000 por noche',
+    precio: '$165.000 por noche',
     vigencia: 'Agosto',
     detalle: 'Promoción válida para 2 personas en estadías de 3 noches o más',
   },
   {
-    titulo: 'Primavera Temprana',
-    precio: '$150.000 por noche',
+    titulo: 'Temporada de Primavera',
+    precio: '$165.000 por noche',
     vigencia: 'Septiembre',
     detalle: 'Promoción válida para 2 personas en estadías de 3 noches o más',
   },
   {
     titulo: 'Promo de Octubre',
-    precio: '$150.000 por noche',
+    precio: '$165.000 por noche',
     vigencia: 'Octubre',
     detalle: 'Promoción válida para 2 personas en estadías de 3 noches o más',
   },
   {
     titulo: 'Pre Verano',
-    precio: '$150.000 por noche',
+    precio: '$165.000 por noche',
     vigencia: 'Noviembre',
     detalle: 'Promoción válida para 2 personas en estadías de 3 noches o más',
   },
   {
     titulo: 'Fiestas en La Felipa',
-    precio: '$150.000 por noche',
+    precio: '$165.000 por noche',
     vigencia: 'Diciembre',
     detalle: 'Promoción válida para 2 personas en estadías de 3 noches o más',
   },
@@ -178,7 +178,7 @@ export const Tarifas = () => {
             <p className={classes.promoVigencia}>Vigencia: {promoActual.vigencia}</p>
             <div className={classes.promoDivider} />
             <p className={classes.promoDetalle}>{promoActual.detalle}</p>
-            <p className={classes.promoNota}>Tarifa no promocional: $160.000 por noche para estadías menores a 3 noches</p>
+            <p className={classes.promoNota}>Tarifa no promocional: $175.000 por noche para estadías menores a 3 noches</p>
           </article>
 
           <article className={classes.formCard}>
